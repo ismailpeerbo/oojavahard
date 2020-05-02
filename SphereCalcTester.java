@@ -1,8 +1,7 @@
 public class SphereCalcTester {
     public static void main( String[] args )  {
-        SphereCalc2 c = new SphereCalc2();
+        SphereCalc4 c = new SphereCalc4(5);
 
-        c.setRadius(5);
         if ( isNear(c.getSurfaceArea(), 314.159265359) ) {
             System.out.println( "PASS: surfaceArea for " + c.getRadius() );
         } else {
@@ -14,7 +13,7 @@ public class SphereCalcTester {
             System.out.println( "FAIL: volume not what was expected!" );
         }
 
-        c.radius = 0.1;
+        c.setRadius(0.1);;
         if ( isNear(c.getSurfaceArea(), 0.125663706) ) {
             System.out.println( "PASS: surfaceArea for " + c.getRadius() );
         } else {
