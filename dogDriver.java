@@ -10,5 +10,6 @@ public class dogDriver {
 
 		System.out.println( pal.getEverything() );
 		System.out.println( spike.getEverything() );
+		
 	}
 }
