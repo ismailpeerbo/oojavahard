@@ -41,7 +41,8 @@ public class NoughtsCrossesObject
 
 	private boolean winCheck( String p, int a, int b, int c, int d, int e, int f) {
 		return board[a][b].equals(board[c][d]) 
-				&& board[a][b].equals(board[e][f]);
+				&& board[a][b].equals(board[e][f]) 
+				&& board[a][b].equals(p);
 	}
 
 	public boolean isFull() {
@@ -86,7 +87,9 @@ public class NoughtsCrossesObject
 	public String toString() {
 		String out = "";
 		out += "  0  " + board[0][0] + "|" + board[0][1] + "|" + board[0][2] + "\n";
+		out += "    --+-+--" + "\n";
 		out += "  1  " + board[1][0] + "|" + board[1][1] + "|" + board[1][2] + "\n";
+		out += "    --+-+--" + "\n";
 		out += "  2  " + board[2][0] + "|" + board[2][1] + "|" + board[2][2] + "\n";
 		out += "     0 1 2 " + "\n";
 		return out;
