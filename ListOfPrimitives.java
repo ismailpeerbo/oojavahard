@@ -45,7 +45,7 @@ public class ListOfPrimitives {
 		 for ( int n : bins ) {
 			 total += n;;
 		 }
-		 System.out.println( "The total is " + total);
+		 System.out.println( "The total is still" + total);
 
 		 ArrayList<Character> letters = new ArrayList<Character>();
 		 letters.add('z'); // auto-boxes char
