@@ -4,5 +4,16 @@ public class BasicInheritance {
 		System.out.println(rect1);
 		System.out.println("\tArea: " + rect1.getArea());
 		System.out.println("\tPerimeter: " + rect1.getParimeter());
+
+		Square sq1 = new Square(3);
+		System.out.println( "\n" + sq1);
+		System.out.println( "\tArea: " + sq1.getArea());
+		System.out.println( "\tPerimeter: " + sq1.getParimeter());
+
+		Rect r = new Rect();
+		Rect s = new Square(2);
+		System.out.println("\n" + r + ", and " + s);
+		r = s;
+		System.out.println("\nHere is my rectangle: " + r);
 	}
 }
