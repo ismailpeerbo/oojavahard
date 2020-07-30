@@ -41,6 +41,6 @@ public class GamePiece {
 	public String getSymbol() { return symbol; }
 
 	public String toString() {
-		return "GamePiece at (" + r ", " + c + ")";
+		return "GamePiece at (" + r + ", " + c + ")";
 	}
 }

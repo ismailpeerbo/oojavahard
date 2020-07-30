@@ -26,7 +26,7 @@ public class GameBoard {
 	}
 
 	public String toString() {
-		String out = '';
+		String out = "";
 		for ( int r = 0; r < g.length; r++ ) {
 			for (int c = 0; c <g[0].length; c++ ) {
 				if ( g[r][c] == null )
@@ -34,7 +34,7 @@ public class GameBoard {
 				else
 					out += g[r][c].getSymbol();
 			}
-			out += "/n";
+			out += "\n";
 		}
 		return out;
 	}
