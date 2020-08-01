@@ -15,7 +15,7 @@ public class BreakthroughBoard extends GameBoard {
 	}
 
 	public void createPieceAt( int r, int c, boolean isWhite ) {
-		BreakthroughPiece bp new = BreakthroughPiece(r, c, isWhite);
+		BreakthroughPiece bp = new BreakthroughPiece(r, c, isWhite);
 		bp.addSelfToBoard(this);
 	}
 
