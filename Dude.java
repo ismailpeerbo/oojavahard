@@ -10,7 +10,7 @@ public class Dude {
 	@Override
 	public boolean equals(Object obj) {
 		Dude other = (Dude)obj;
-		return (this.age == other.age && this.name.equals(Other.name) );
+		return (this.age == other.age && this.name.equals(other.name) );
 	}
 
 	@Override
