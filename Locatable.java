@@ -1,3 +1,3 @@
-public interface Locateable  {
+public interface Locatable  {
 	Location getLocation();
 }
