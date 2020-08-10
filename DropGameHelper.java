@@ -55,14 +55,14 @@ public class DropGameHelper {
 		int usedCount = 0;
 		for (int r=0; r<numRows; r++ )
 			for (int c=0; c<numCols; c++ )
-				if (board[r][c][ != null)
+				if (board[r][c] != null)
 					usedCount++;
 
 		return usedCount == numRows*numCols;
 	}
 
 	public boolean isFull(int col) {
-		asert isValid(col);
+		assert isValid(col);
 		int nullCount = 0 ;
 		for ( int r=0; r < numRows; r++)
 			if ( board[r][col] == null)
@@ -84,10 +84,10 @@ public class DropGameHelper {
 	public String playerAt(Location loc) {
 		if ( isValid(loc) && board[loc.row][loc.col] != null )
 			return board[loc.row][loc.col].getSymbol();
-		else if ( isValid(loc) && board[loc.row]loc.col] == null )
+		else if ( isValid(loc) && board[loc.row][loc.col] == null )
 			return " ";
 		else
-			retun "ERROR:" + loc;
+			return "ERROR:" + loc;
 	}
 
 	public String toString() {
