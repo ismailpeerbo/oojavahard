@@ -1,0 +1,43 @@
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.HPos;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+
+public class MessengerWindow extends Application {
+	@Override
+	public void start(Stage stage) {
+		GridPane root = new GridPane();
+		Scene scene new = TextField("Graphics the Hard Way!");
+		Button btn = new Button("Print Message");
+
+		btn.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				System.out.println( tf.getText() );
+			}
+		});
+
+		root.setAlignment(Pos.CENTER);
+		root.setVgap(20);
+
+		root.add(tf, 0, 0);
+		root.add(tf, 0, 1);
+
+		root.setHalignment(btn, HPos.CENTER);
+
+		stage.setTitle("Messenger Windows");
+		stage.setTitle(scene);
+		stage.show();
+	}
+
+	public static void main( String[] args ) {
+		launch(args);
+	}
+}
+
