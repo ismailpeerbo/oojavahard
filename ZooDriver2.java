@@ -1,4 +1,5 @@
-package zoo;
+import zoo.Horse;
+import zoo.Llama;
 
 public class ZooDriver2 {
 	public static void main( String[] args ) {
