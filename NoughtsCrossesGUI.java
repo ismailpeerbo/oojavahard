@@ -118,7 +118,7 @@ public class NoughtsCrossesGUI extends Application {
 		// vertical lines
 		gc.strokeLines(300, 50, 300, 650);
 		gc.strokeLines(500, 50, 500, 650);
-		// lables
+		// labels
 		if ( drawLabels ) {
 			gc.setFont(Font.getDefault());
 			gc.setFill(Color.BLACK);
